@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OneZ - Your One-Stop Tech Support</title>
+    <title>OneZ - Your Tech Companion</title>
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            background: linear-gradient(135deg, #1a73e8, #ff4081);
             color: white;
         }
         header {
             text-align: center;
             padding: 20px 0;
-            background: #1e3c72;
+            background: #1a73e8;
             border-bottom: 4px solid #ffcc00;
         }
         header h1 {
@@ -25,6 +25,7 @@
         header p {
             font-size: 1.2em;
             margin: 10px 0 0;
+            font-style: italic;
         }
         .container {
             padding: 30px;
@@ -54,10 +55,29 @@
             font-size: 1em;
             margin: 10px 0 0;
         }
+        .heart-container {
+            margin-top: 40px;
+            text-align: center;
+        }
+        .heart-button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            font-size: 2em;
+            color: #ff4081;
+            transition: transform 0.2s, color 0.2s;
+        }
+        .heart-button:hover {
+            color: #ffcc00;
+            transform: scale(1.2);
+        }
+        .heart-button:focus {
+            outline: none;
+        }
         footer {
             text-align: center;
             padding: 20px 0;
-            background: #1e3c72;
+            background: #1a73e8;
             border-top: 4px solid #ffcc00;
             margin-top: 20px;
         }
@@ -66,32 +86,36 @@
             font-size: 1em;
         }
     </style>
+    <script>
+        function heartClicked() {
+            alert("Thank you for your love and support!");
+        }
+    </script>
 </head>
 <body>
     <header>
         <h1>OneZ</h1>
-        <p>Your One-Stop Solution for All Technical Support Needs</p>
+        <p>Crafting Solutions with Love for Your Technical Needs</p>
     </header>
     <div class="container">
         <h2>Our Services</h2>
-        <p>At OneZ, we specialize in a wide range of technical support services tailored to meet your unique needs.</p>
+        <p>OneZ is here to provide innovative solutions tailored just for you. Let us handle the technical side so you can focus on what you do best!</p>
         <div class="services">
             <div class="service-card">
-                <h3>IT Support</h3>
-                <p>Comprehensive IT solutions, from troubleshooting to full system setup.</p>
+                <h3>Website Creation</h3>
+                <p>Get sleek, small websites designed specifically for your needs, perfect for businesses or personal portfolios.</p>
             </div>
             <div class="service-card">
-                <h3>Hardware Repairs</h3>
-                <p>We fix and maintain all your devices, ensuring they work like new.</p>
+                <h3>Technical Problem Solving</h3>
+                <p>Stuck with a technical issue? OneZ is your go-to partner for quick and effective solutions.</p>
             </div>
             <div class="service-card">
-                <h3>Software Solutions</h3>
-                <p>Customized software development and troubleshooting for any platform.</p>
+                <h3>Account Boosting</h3>
+                <p>Enhance your social media presence with more followers, views, and engagement, especially on Instagram.</p>
             </div>
-            <div class="service-card">
-                <h3>Networking</h3>
-                <p>Reliable and secure network setup and maintenance for your home or business.</p>
-            </div>
+        </div>
+        <div class="heart-container">
+            <button class="heart-button" onclick="heartClicked()">❤</button>
         </div>
     </div>
     <footer>
